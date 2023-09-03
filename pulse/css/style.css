@@ -1,3 +1,5 @@
+
+
 @keyframes heartbeat {
   from {
     transform: scale(1);
@@ -9,107 +11,7 @@
     transform: scale(1);
   }
 }
-@media (max-width: 991px) {
-  .container {
-    display: block;
-    width: 750px;
-    margin: 0 auto;
-  }
-  .promo__wrapper {
-    margin-top: 45px;
-  }
-  .promo__icons {
-    margin-top: 40px;
-  }
-  .promo__icon img {
-    margin-bottom: 10px;
-  }
-  .button_main {
-    margin-top: 50px;
-  }
-  .promo {
-    min-height: 520px;
-  }
-  .advant {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .advant__items {
-    padding-top: 30px;
-  }
-  .advant__item {
-    width: 200px;
-  }
-  .advant__text {
-    margin-top: 15px;
-  }
-  .advant__subtext {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 776px) {
-  .container {
-    max-width: 550px;
-  }
-  .header__official {
-    display: none;
-  }
-  .promo_link {
-    display: none;
-  }
-  .advant__subtext {
-    display: none;
-  }
-}
-@media (max-width: 575px) {
-  .container {
-    max-width: 300px;
-  }
-  .promo__header {
-    text-align: center;
-    font-weight: 500;
-    font-size: 42px;
-    color: white;
-    margin-bottom: 40px;
-  }
-  .promo__subheader {
-    display: none;
-  }
-  .promo__icons {
-    margin-top: 20px;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .promo__icon {
-    margin-bottom: 20px;
-    display: block;
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    color: white;
-  }
-  .promo__icon img {
-    margin-bottom: 10px;
-  }
-  .header__logo img {
-    display: none;
-  }
-  .header__contacts {
-    width: 200%;
-  }
-  .advant__item {
-    display: block;
-    width: 60%;
-  }
-  .advant__item img {
-    display: block;
-    width: 60%;
-  }
-  .advant__text {
-    font-weight: 500;
-  }
-}
+
 * {
   font-family: "Museo Sans Curl", sans-serif;
 }
@@ -752,5 +654,141 @@ hr {
 .footer__map_style {
   width: 100%;
   height: 630px;
-  frameborder: 0;
 }/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 991px) {
+  .container {
+    display: block;
+    width: 750px;
+    margin: 0 auto;
+  }
+  .carousel {
+    display: none;
+  }
+  .promo__wrapper {
+    margin-top: 45px;
+  }
+  .promo__icons {
+    margin-top: 40px;
+  }
+  .promo__icon img {
+    margin-bottom: 10px;
+  }
+  .button_main {
+    margin-top: 50px;
+  }
+  .promo {
+    min-height: 520px;
+  }
+  .advant {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advant__items {
+    padding-top: 30px;
+  }
+  .advant__item {
+    width: 200px;
+  }
+  .advant__text {
+    margin-top: 15px;
+  }
+  .advant__subtext {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 776px) {
+  .container {
+    max-width: 550px;
+  }
+  .header__official {
+    display: none;
+  }
+  .promo_link {
+    display: none;
+  }
+  .advant__subtext {
+    display: none;
+  }
+  .slick-slide img{
+    max-width: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .reviews{
+    display: none;
+  }
+  .carousel__inner {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    display: none;
+  }
+  .container {
+    max-width: 300px;
+  }
+  .promo__header {
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .promo__subheader {
+    display: none;
+  }
+  .promo__icons {
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .promo__icon {
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+  }
+  .promo__icon img {
+    margin-bottom: 10px;
+  }
+  .header__logo img {
+    display: none;
+  }
+  .header__contacts {
+    width: 200%;
+  }
+  .advant__item {
+    display: block;
+    width: 60%;
+  }
+  .advant__item img {
+    display: block;
+    width: 60%;
+  }
+  .advant__text {
+    font-weight: 500;
+  }
+  .catalog__tab {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 47px;
+    width: 280px;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .catalog__tabs{
+    display: block;
+  }
+  .footer__info {
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+  }
+}
