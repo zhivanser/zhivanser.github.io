@@ -18,3 +18,12 @@ window.onclick = function (event){
         modal.style.display = "none";
     }
 }
+jQuery(document).ready(($)=>{
+
+    // документ загружен!
+
+    $('.element-1').lightGallery({
+
+    });
+
+});
