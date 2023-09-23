@@ -1,3 +1,4 @@
+
 var btn = document.getElementById("promo_btn");
 var btnTwo = document.getElementById("promo_btn_two");
 var modal = document.getElementById("promo_modal");
@@ -18,6 +19,7 @@ window.onclick = function (event){
         modal.style.display = "none";
     }
 }
+
 jQuery(document).ready(($)=>{
 
     // документ загружен!
@@ -25,5 +27,21 @@ jQuery(document).ready(($)=>{
     $('.element-1').lightGallery({
 
     });
+
+    const menu = document.querySelector('.menu_list');
+    const menuItem = document.querySelectorAll('.menu_link');
+    const hamburger = document.querySelector('.burger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('burger_active');
+        menu.classList.toggle('menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('burger_active');
+            menu.classList.toggle('menu_active');
+        })
+    })
 
 });
