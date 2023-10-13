@@ -362,8 +362,53 @@ span.numit{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 767px){
-  
+	.lg-toolbar .lg-icon {
+		color: #999;
+		cursor: pointer;
+		float: right;
+		font-size: 50px;
+		height: 47px;
+		line-height: 27px;
+		padding: 10px 0;
+		text-align: center;
+		width: 50px;
+		margin-left: 10px;
+		margin-right: 12px;
+		margin-top: 15px;
+	
+	}
+	#lg-counter {
+		font-size: 40px;
+	
+	}
 	.promo_title{
 		font-size: 45px;
 	}
@@ -428,6 +473,24 @@ span.numit{
 	}
 	.content{
 		padding-bottom: 30px;
+	}
+	.lg-toolbar .lg-icon {
+		color: #999;
+		cursor: pointer;
+		float: right;
+		font-size: 100px;
+		height: 47px;
+		line-height: 27px;
+		padding: 10px 0;
+		text-align: center;
+		width: 50px;
+		margin-left: 0px;
+		margin-right: 60px;
+		margin-top: 30px;
+	}
+	#lg-counter {
+		font-size: 90px;
+	
 	}
 	
 	
