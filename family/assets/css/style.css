@@ -353,7 +353,11 @@ span.numit{
 
 
 
-
+.lg-outer .lg-img-wrap{
+	background: url(../img/bg.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
 
 
 
