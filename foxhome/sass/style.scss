@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+@import 'libs/bootstrap-reboot.min';
+
+
+
+* {
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Marck Script', cursive;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #59cd5f #ffffff00;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #59cd5f;
+    border-radius: 7px;
+    border: 2px solid #2eb279;
+    
+  }
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+body{
+    position: relative;
+}
+
+@import 'blocks/menu';
+@import 'blocks/carousel';
+@import 'blocks/photo';
+@import 'blocks/photo_sliders';
+@import 'blocks/_attractions.scss';
+
+
+@import 'base/media';

@@ -1,0 +1,75 @@
+
+
+
+.slick-arrow{
+    height: 100px;
+}
+
+.slick-track{
+    display: flex;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slick-prev1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+    height: 100px;
+}
+.slick-next1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    border: none;
+    cursor: pointer;
+    height: 100px;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    font-size: 0;
+}
+.slick-dots button {
+    background: #b5a7a7; 
+    border: none; 
+    border-radius: 50%; 
+    height: 15px; 
+    width: 15px; 
+    margin: 5px; 
+    outline: none; 
+    font-size: 0;
+}
+.slick-dots li[class="slick-active"] button {
+    background: #59cd5f;
+    font-size: 0;
+}
+.button_pohoto_slider{
+    position: absolute;
+    bottom: 50px;
+    padding: 10px  20px  10px  20px;
+    background-color: #59cd5f;
+    font-size: 17px;
+    border-radius:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+    &:hover{
+        left: 50%;
+        text-decoration: none;
+        transform: scale(1.12,1.12) translateX(-49%);
+    }
+}

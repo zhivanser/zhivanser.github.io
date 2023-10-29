@@ -1,0 +1,198 @@
+.attractions{
+    padding-top: 100px;
+    background: url("../../img/atrac/nebo1.jpg") ;
+    /* background-size: cover; */
+    background-repeat:no-repeat;
+    padding-bottom: 200px;
+    transition: all 0.5s;
+    
+}
+.vpred{
+    margin-left: 15px;
+
+    p{
+        font-size: 32px;
+        margin-bottom: 30px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+.atrac_title{
+    margin-bottom: 30px;
+    margin-left: 40px;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+._1{
+    &::before{
+        content: 'Рождество-Богородицкий монастырь';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+    }
+}
+._2{
+    &::before{
+        content: 'Форест-парк';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+       
+    }
+}
+._3{
+    &::before{
+        content: 'Троицкий собор';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+     
+    }
+}
+._4{
+    &::before{
+        content: 'Собор Пресвятой Богородицы';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+       
+    }        
+}
+._5{
+    &::before{
+        content: 'Кудыкина гора';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+       
+    }
+}
+
+._6{
+    &::before{
+        content: 'Парк Облака';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+      
+    }
+}
+._7{
+    &::before{
+        content: 'Свято-Тихоновский монастырь';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+    }
+}
+._8{
+    &::before{
+        content: 'Богородице-Тихоновский монастырь';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+   
+    }
+}
+._9{
+    &::before{
+        content: 'Заповедник Галичья гора';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+    }
+}
+._10{
+    &::before{
+        content: 'Океанариум';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+._11{
+    &::before{
+        content: 'Музей прессы Антресоль';
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+    }
+}   
+
+.atarac {
+    display: flex;
+    transition: all 1s;
+    width: 250px;
+    &:hover{
+        
+        .atrac_face2{
+            transition: all 1.5s;
+            /* transform: translateX(0); */
+            transform: scale(1);
+            opacity: 1;
+            .atrac_descr{
+                font-size: 20px;
+                position: relative;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        .atrac_img{
+            width: 320px;
+            height: 240px;
+            margin-right: 50px;
+        }
+        .atrac_map{
+            width: 320px;
+            height: 240px;
+        }
+        .atrac_wrapper{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            height: 240px;
+        }
+    }
+}
+.atrac_face2{
+    padding-left: 250px;
+    width: 900px;
+   /*  transform: translateX(100%); */
+    transform: scale(0);
+    opacity: 0;
+    transition: all 1s;
+}
+.atrac_descr{
+    font-size: 0;
+}
+.atrac_img{
+    height: 0;
+    object-fit: cover;
+}
+.atrac_map{
+    height: 0;
+}
+.atrac_wrapper{
+    height: 0;
+}
