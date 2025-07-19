@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-Host: site.ru
-Sitemap: http://zhivanser.github.io/sitemap.xml
