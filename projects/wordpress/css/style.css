@@ -1,0 +1,423 @@
+*{                      /* привенивается ко всем эелементам */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.promo
+{
+    height: 850px;                              /* высота */ 
+    padding-top: 40px;                          /* отступы внутри блока */
+    padding-bottom: 60px;                       /* отступы внутри блока */
+    background: url('../img/main_bg.png')       /* открытие картинки */
+    center center/                              /* выравнивание по центру с оси х и у */
+    cover                                       /* растягивание по ширине */ 
+    no-repeat;                                  /* чтобы не повтарялась картинка, (вроде) */
+
+}
+
+.container
+{
+    position: relative;             /* для позицировангия картинки жени шины */
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.logo .logo_img
+{
+    display: block;                 /* блочный элемент */
+    margin: 0 auto;                 /* выравиниванее по оси х */
+}
+
+.logo .logo_text
+{
+    font-family: Roboto;            /* семейство шрифтов */
+    font-style: normal;             /* ститль шрифта */
+    font-weight: 500;               /* жирность шрифта */
+    font-size: 15px;                /* размер шрифта */
+    line-height: 35px;              /* меж строчный энтервал */
+    text-transform: uppercase;      /* весь текст в верхний регистр */
+    color: #FFFFFF;               /* цвет */
+    text-align: center;             /* расположение по центру */
+    margin-top: 20px;               /* верхний отступ 20 пх */
+}
+
+
+.title
+{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F9BF3B;
+}
+
+
+
+.simple .big
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 21px;
+}
+
+h1
+{
+    margin-top: 55px;
+}
+
+h2.title
+{
+
+
+
+       
+    margin-top:   21px;
+}
+
+.promo_text
+{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.promo .promo_text span
+{
+    font-weight: bold;
+    color: #F9BF3B;
+}
+.promo_btn{
+    /* сама кнопка */
+    display: block;
+    margin: 0 auto;
+   
+    height: 72px;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);    /* градиент заднего фона (цвета) */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.18);                    /* тень которую отбрасывает наш блок */
+    margin-top: 70px;
+    padding: 20px;
+  
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+
+    /* курсор */
+    cursor: pointer;                  /* выделение обыекта куросорм(активная кнопка) */
+    border: none;
+}   
+.more_text
+{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 70px;
+}
+
+.more_img
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.waiting
+{
+    min-height: 607px;      /* минимальня высота, модет увеличится из-зи теста или картинки */
+    background: #EFEFEF;
+    padding-top: 85px;
+    padding-bottom: 75px;
+}
+.waiting_head
+{
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+.waiting_box, .finish_box
+{
+    margin: 0 auto;
+    width: 220px;
+    height: 7px;
+    background: #F9BF3B;
+    margin-top: 18px;
+}
+.waiting_subhead
+{
+    margin-top: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.waiting_wrapper 
+{
+    display: flex;                          /* для выравнивания (современно) */
+    justify-content: space-between;         /* чтобы левый элемент прижался к левому краю правый к правому центральный наместе, для выравиниваия с дисплэй флексом */
+    margin-top: 45px;
+}
+
+.waiting_item
+{
+ /* display: inline-block;
+    vertical-align: top;        для выравнивания по верху  */
+    width: 339px;
+    text-align: center;
+}
+
+.waiting_img
+{
+    width: 100%;    /* ширина 100% от родителя */
+}
+
+.waiting_text
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #4A4A4A;
+    margin-top: 25px;
+}
+.optim
+{
+    min-height: 550px;
+    padding-top: 102px;
+    padding-bottom: 107px;
+}
+.optim_text
+{
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+    margin-left: 391px;
+}
+h2.optim_head
+{
+    margin-left: 391px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: #299CBD;
+}
+span
+{
+    font-weight: bold;
+}
+.optim_img
+{
+    position: absolute;
+    top: 48px;
+    left: -240px;
+    z-index: -1;            /*  для того чтобы текст был поверх картинки */
+}
+.finish_head
+{
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.finish
+{
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/second_bg.png') center center/cover no-repeat;
+}
+
+.fin_wrapper
+{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+.fin_circle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    background: #B4E2FF;
+    border-radius: 100%;            /* скругление углов(для круга) */
+}
+.fin_text
+{
+    margin-top: 25px;
+    width: 204px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #EFEFEF;
+}
+.gift
+{
+    background: #EFEFEF;
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+.gift_img
+{
+    display: block;
+    margin: 0 auto;
+    width: 154px;
+    height: 174px;
+}
+.gift_text
+{
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    color: #252525;
+}
+.gift_btn
+{
+    display: block;
+    margin: 0 auto;
+    width: 313px;
+    height: 72px;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);    /* градиент заднего фона (цвета) */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.18);                       /* тень которую отбрасывает наш блок */
+    margin-top: 70px;
+
+    /* текст в кнопке */
+    font-family: 'RobotoCondensed';
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+
+    /* курсор */
+    cursor: pointer;                  /* выделение обыекта куросорм(активная кнопка) */
+}
+
+.first
+{
+    padding-top: 89px;
+    padding-bottom: 72px;
+}
+
+.first_img
+{
+    display: block;
+    margin: 0 auto;
+}
+.first_text1
+{
+    margin-top: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+.first_text2
+{
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+.first_text3
+{
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+}
+.foot
+{
+    background: #1A1A1A;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.foot_text1{
+    display: inline;
+    cursor: pointer; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #888888;
+}
+.foot_text2{
+    display: inline;
+    cursor: pointer; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #888888;
+}
+.more_text1
+{
+    text-align: center;
+}
+.foot_text3
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #888888;
+}
