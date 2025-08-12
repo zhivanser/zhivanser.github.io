@@ -1,0 +1,10 @@
+
+User-agent: *
+Allow: /
+Disallow: https://zhivanser.github.io/family
+Disallow: https://zhivanser.github.io/foxhome
+Disallow: https://zhivanser.github.io/projects
+Allow: https://zhivanser.github.io/PCmaster
+Allow: https://zhivanser.github.io/
+Sitemap: https://zhivanser.github.io/sitemap.xml
+Host: https://zhivanser.github.io/
