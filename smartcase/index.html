@@ -1,0 +1,183 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Умный корпус для ПЭВМ — климат и безопасность</title>
+  <meta name="description" content="Умный корпус для ПЭВМ — контроль климата, качества воздуха и тревожные уведомления в Telegram. BME280 x3, SW420, MQ2, GP2Y1010AU0F, ESP32." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-mark" aria-hidden="true"><img src="logo.png" alt="logo"></div>
+        <div class="logo-text">
+          <h1>Умный Корпус</h1>
+          <p class="tagline">Безопасность и комфорт для вашего ПК</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#home">Главная</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#tech">Технологии</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts" class="btn-outline">Контакты</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h2>Умный корпус для ПЭВМ</h2>
+          <p class="lead">Автономный контроль климата и качество воздуха внутри корпуса. Мгновенные уведомления в Telegram при критических значениях. Защищайте железо, продлевайте жизнь системе.</p>
+          <div class="hero-cta">
+            <a href="#tech" class="btn-primary">Узнать технологии</a>
+            <a href="#contacts" class="btn-outline">Связаться</a>
+          </div>
+          <ul class="value-list">
+            <li>Точное измерение: BME280 ×3 (темп., влажность, давл.)</li>
+            <li>Детекторы дыма/газов: MQ2, датчик пыли GP2Y1010AU0F</li>
+            <li>Уведомления в Telegram + автономная климат-регуляция</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="https://pub-cdn.sider.ai/u/U0NWHAG5Y6Z/web-coder/6952cf145599fc8caeac023c/resource/ff721249-8687-44d4-846d-a9f2f42b19e2.jpg" alt="Умный корпус — схема" />
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="section">
+      <div class="container">
+        <h3 class="section-title">Преимущества</h3>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">⏱️</div>
+            <h4>Проактивная защита</h4>
+            <p>Система отправляет мгновенные уведомления при критических уровнях газа, дыма или перегрева — вы реагируете раньше, чем станет поздно.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🌡️</div>
+            <h4>Точный климат-контроль</h4>
+            <p>Три BME280 обеспечивают точные и усреднённые измерения для корректного управления вентиляцией и охлаждением.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🔌</div>
+            <h4>Автономность</h4>
+            <p>ESP32 выполняет логику локально — корпус продолжает защищать систему даже при потере связи с сетью.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📲</div>
+            <h4>Интеграция с Telegram</h4>
+            <p>Уведомления в бота помогают мгновенно получать сигналы на телефон — настройка проста и быстра.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Описание технологии</h3>
+        <div class="tech-grid">
+          <div class="tech-left">
+            <p class="lead">Набор датчиков подобран для комплексного мониторинга микроклимата и безопасности внутри корпуса:</p>
+            <ul class="tech-list">
+              <li><strong>BME280 ×3</strong> — температура, влажность, атмосферное давление. Тройное размещение устраняет локальные погрешности.</li>
+              <li><strong>SW420</strong> — вибрация/удар, помогает детектировать механические повреждения и нештатные события.</li>
+              <li><strong>MQ2</strong> — детекция горючих газов и дыма.</li>
+              <li><strong>GP2Y1010AU0F</strong> — оптический датчик пыли для контроля загрязнений и накопления пыли в корпусе.</li>
+              <li><strong>ESP32</strong> — управляющий контроллер с Wi‑Fi и BLE, выполняет локальную логику и отправляет уведомления в Telegram через бот.</li>
+            </ul>
+            <p>Система умеет не только оповещать, но и реагировать: включать/выключать вентиляторы, активировать сирены или триггерить другие исполнительные механизмы по заданным правилам.</p>
+          </div>
+          <div class="tech-right">
+            <div class="simulator" aria-hidden="false">
+              <h4>Демонстрация показаний</h4>
+              <div class="sensors">
+                <div class="sensor" data-sensor="temp"><span class="label">Темп.</span><span class="value" id="val-temp">-- °C</span></div>
+                <div class="sensor" data-sensor="hum"><span class="label">Влажность</span><span class="value" id="val-hum">-- %</span></div>
+                <div class="sensor" data-sensor="pm"><span class="label">Пыль (PM)</span><span class="value" id="val-pm">-- μg/m³</span></div>
+                <div class="sensor" data-sensor="gas"><span class="label">Газ</span><span class="value" id="val-gas">--</span></div>
+              </div>
+              <div class="sim-controls">
+                <button id="btn-simulate" class="btn-primary">Запустить симуляцию</button>
+                <button id="btn-stop" class="btn-outline">Остановить</button>
+              </div>
+              <div id="alert-box" class="alert" hidden></div>
+              <p class="note">Критерии оповещений могут настраиваться под ваши задачи: безопасность, стабильность серверов, сохранность данных.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title">О нас</h3>
+        <div class="about-grid">
+          <div>
+            <p>Мы — команда инженеров и энтузиастов, создающих умные решения для защиты и продления срока службы вычислительного оборудования. Наша миссия — чтобы техника работала дольше и надёжнее, а владельцы получали спокойствие.</p>
+            <ul>
+              <li>Опыт в встраиваемых системах и IoT</li>
+              <li>Гарантия обновлений и поддержка</li>
+              <li>Гибкие схемы интеграции в корпоративную инфраструктуру</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Почему это важно</h4>
+            <p>Перегрев, запыление и утечки газов — частые причины поломок и пожаров. Наш корпус минимизирует риски, экономит на ремонтах и защищает данные и оборудование.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Контакты</h3>
+        <!-- <div class="contact-grid">
+          <form id="contact-form" class="contact-form" novalidate>
+            <label>
+              <span>Ваше имя</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Почта</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Сообщение</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Отправить</button>
+              <button type="reset" class="btn-outline">Очистить</button>
+            </div>-->
+            <p class="small">Напишите напрямую в Telegram: <a href="https://t.me/+xWYeYoNDOsAwMjgy" target="_blank" rel="noopener">https://t.me/+xWYeYoNDOsAwMjgy</a></p>
+          </form>
+          <div class="contacts-info">
+            <h4>Связаться с нами</h4>
+            <p>Электронная почта: <a href="mailto:zhivans2000@gmail.com">zhivans2000@gmail.com</a></p>
+            <p>Телефон: +7 (900) 592-50-35</p>
+            <p>Мы доступны в Telegram и готовы помочь с интеграцией и настройкой.</p>
+          </div>
+        </div> 
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Умный Корпус — все права защищены</p>
+      <nav>
+        <div>Удачного использования Корпуса!</div>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
