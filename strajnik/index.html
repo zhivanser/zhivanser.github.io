@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>С.Т.Р.А.Ж.Н.иК. — система телеметрии, распознавания, анализа жизнедеятельности насекомых и климата</title>
+<meta name="description" content="СТРАЖНиК — распределенная сеть автономных узлов с локальным ИИ для точечного фитомониторинга, подсчета вредителей и контроля микроклимата в теплицах и на полях.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%232E5B1E'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23F5F1E3' font-family='Arial Black'>С</text></svg>">
+</head>
+<body>
+
+<header class="topbar" id="top">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">С</span>
+      <span class="brand-text">С.Т.Р.А.Ж.Н.<span class="brand-small">иК</span>
+        <em>система телеметрии, распознавания, анализа насекомых и климата</em>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#problem">Проблема</a>
+      <a href="#solution">Решение</a>
+      <a href="#how">Как работает</a>
+      <a href="#compare">Аналоги</a>
+      <a href="#tech">Технологии</a>
+      <a href="#market">Рынок</a>
+      <a href="#team">Команда</a>
+      <a href="#contacts" class="btn btn-small">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO — в стиле титульного слайда -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-kicker"><span class="dot"></span> АГРОТЕХ · IoT · TinyML · ЗАЩИЩЁННЫЙ ГРУНТ</div>
+    <h1 class="hero-title">С.Т.Р.А.Ж.Н.<span class="thin">иК</span><span class="dot-end">.</span></h1>
+    <p class="hero-sub">система <b>телеметрии, распознавания, анализа жизнедеятельности насекомых и климата</b></p>
+    <p class="hero-lead">Автоматизация точечного фитомониторинга и обнаружения вредителей в закрытом грунте с помощью ИИ-модуля — для превентивной защиты урожая и снижения затрат на СЗР и биозащиту.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contacts">Связаться с командой</a>
+      <a class="btn btn-ghost" href="#solution">Как это работает</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><b>8–12 мес</b><span>автономной работы узла без подзарядки</span></div>
+      <div class="hstat"><b>~15 тыс. ₽</b><span>стоимость узла — в 6–12 раз дешевле импортных</span></div>
+      <div class="hstat"><b>до 30 км</b><span>дальность связи LoRa между узлами</span></div>
+      <div class="hstat"><b>96% mAP</b><span>точность YOLOv8 на собственных данных</span></div>
+    </div>
+  </div>
+  <div class="hero-stripe" aria-hidden="true"></div>
+</section>
+
+<!-- ПОТЕРИ -->
+<section class="losses" id="problem">
+  <div class="wrap">
+    <div class="sec-label">Проблема · Теряется ежегодно</div>
+    <div class="loss-grid">
+      <article class="loss-card reveal">
+        <div class="loss-num">7–13+ <small>млрд руб.</small></div>
+        <p>От замедленного реагирования на природные катаклизмы и климатические факторы <span class="src">***</span></p>
+      </article>
+      <article class="loss-card reveal">
+        <div class="loss-num">40<small>%</small></div>
+        <p>Мирового урожая — из-за патогенов и вредителей <span class="src">**</span></p>
+      </article>
+      <article class="loss-card reveal">
+        <div class="loss-num">7 <small>млн тонн зерна</small></div>
+        <p>Из-за некачественного контроля вредителей зерновых культур <span class="src">*</span></p>
+      </article>
+    </div>
+    <p class="sources">* — Россельхознадзор (май 2026 г.) &nbsp; ** — ФАО (ООН) &nbsp; *** — Минсельхоз РФ</p>
+
+    <h2 class="sec-title">Как мониторят <span>сегодня</span></h2>
+    <div class="now-grid">
+      <article class="now-card reveal">
+        <div class="now-ico">◉</div>
+        <h3>Дождемеры и IoT-вешки</h3>
+        <p><b>Как сейчас:</b> пластиковые колбы для осадков и одиночные зонды — только T° и влажность почвы.</p>
+        <p class="minus"><b>Минус:</b> нет комплексной картины микроклимата на всей площади.</p>
+      </article>
+      <article class="now-card reveal">
+        <div class="now-ico">⬣</div>
+        <h3>Клеевые / феромонные ловушки</h3>
+        <p><b>Как сейчас:</b> обход раз в несколько дней, ручной подсчёт насекомых, фото в блокнот.</p>
+        <p class="minus"><b>Минус:</b> трудоёмко, человеческий фактор, риск пропустить вспышку.</p>
+      </article>
+      <article class="now-card reveal">
+        <div class="now-ico">❖</div>
+        <h3>Сачок, раскопка, ручной сбор</h3>
+        <p><b>Как сейчас:</b> раскопка 0,25 м², кошение сачком 100 взмахов для оценки популяции.</p>
+        <p class="minus"><b>Минус:</b> огромные затраты времени при низкой репрезентативности.</p>
+      </article>
+      <article class="now-card reveal">
+        <div class="now-ico">✉</div>
+        <h3>Хаотичная фиксация в чатах</h3>
+        <p><b>Как сейчас:</b> фото очагов в WhatsApp / Telegram для согласования закупки химии.</p>
+        <p class="minus"><b>Минус:</b> бессистемный учёт, нет аналитики и динамики угрозы.</p>
+      </article>
+    </div>
+
+    <div class="pain reveal">
+      <h3>Боль фермера</h3>
+      <ul>
+        <li><b>Запоздалая реакция:</b> очаг замечают, когда вредитель уже нанёс урон.</li>
+        <li><b>Финансовые потери:</b> перерасход СЗР и прямые убытки от потери урожая.</li>
+        <li><b>Дефицит ресурсов:</b> агроном физически не успевает контролировать все сектора.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕЛЬ + РЕШЕНИЕ -->
+<section class="goal" id="solution">
+  <div class="wrap goal-in">
+    <div class="goal-left reveal">
+      <div class="sec-label light">Цель проекта</div>
+      <h2>Превентивная защита урожая вместо «тушения пожаров»</h2>
+      <p class="goal-text">Автоматизация точечного фитомониторинга и обнаружения вредителей в закрытом грунте с помощью ИИ-модуля для превентивной защиты урожая и снижения затрат на СЗР и биозащиту.</p>
+      <div class="goal-econ">
+        <div><b>Экономия:</b> сокращение затрат на химикаты и биозащиту</div>
+        <div><b>Сохранение:</b> исключение потерь урожая за счёт раннего обнаружения вспышки</div>
+      </div>
+    </div>
+    <div class="goal-right reveal">
+      <div class="sec-label">Решение</div>
+      <h3>СТРАЖНиК — сеть полевых модулей + центральный узел</h3>
+      <p>Модули размещаются на поле / в теплице, локально подсчитывают метрики климата и количество вредителей. Данные со всех узлов отправляются на центральный узел, который поднимает <b>веб-интерфейс с графиками</b> температуры, влажности, популяции вредителей и рекомендациями.</p>
+      <ul class="check">
+        <li>Полная кастомизация под культуры: дообучение модели за 1–2 недели после установки</li>
+        <li>Нейросеть работает <b>локально на узле</b> — фото в облако не отправляются, интернет не нужен</li>
+        <li>Глубокий сон 99% времени — <b>8–12 месяцев</b> без замены АКБ, без солнечных панелей</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- КАК РАБОТАЕТ -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="sec-label">Структура · 4 шага</div>
+    <h2 class="sec-title">Как работает система</h2>
+    <div class="steps">
+      <article class="step reveal"><div class="step-n">01</div><h3>Узел считывает</h3><p>Каждый узел сканирует клейкую ленту и датчики: вредители + климат + почва.</p></article>
+      <article class="step reveal"><div class="step-n">02</div><h3>ИИ считает локально</h3><p>YOLOv8 на устройстве определяет класс и количество вредителей. Передаётся только результат.</p></article>
+      <article class="step reveal"><div class="step-n">03</div><h3>LoRa передаёт</h3><p>Данные идут по беспроводной LoRa-связи на центральный узел — дальность до 30 км.</p></article>
+      <article class="step reveal"><div class="step-n">04</div><h3>Агроном видит</h3><p>Дашборд: карты, графики динамики популяции, прогноз болезней, уведомления об очагах.</p></article>
+    </div>
+
+    <div class="metrics">
+      <div class="sec-label">Собираемые метрики</div>
+      <div class="metrics-grid">
+        <article class="metric reveal"><span class="m-n">01</span><h3>Почвенный мониторинг</h3><p>Влажность почвы и её анализ — «физическая спелость», полив, риск патогенов.</p></article>
+        <article class="metric reveal"><span class="m-n">02</span><h3>Фитосанитарный мониторинг</h3><p>Численность вредителей и динамика популяции: белокрылка, трипсы, мухи, совка.</p></article>
+        <article class="metric reveal"><span class="m-n">03</span><h3>Микроклимат</h3><p>Температура, влажность и давление воздуха, влажность листа, освещённость.</p></article>
+      </div>
+      <p class="metrics-sum reveal"><b>Итог:</b> предиктивная аналитика — полная автоматизация скаутинга и прогноз болезней для превентивной защиты.</p>
+    </div>
+  </div>
+</section>
+
+<!-- АНАЛОГИ -->
+<section class="compare" id="compare">
+  <div class="wrap">
+    <div class="sec-label">Аналоги · Системы мониторинга АПК</div>
+    <h2 class="sec-title">Почему СТРАЖНиК</h2>
+    <div class="table-wrap reveal">
+    <table class="ctable">
+      <thead><tr><th>Решение</th><th>Внедрение</th><th>Стоимость, 1 шт.</th><th>Распознавание</th><th>Комплексный мониторинг</th><th>Зависимость от связи</th></tr></thead>
+      <tbody>
+        <tr class="hl"><td><b>СТРАЖНиК</b></td><td>Быстро</td><td><b>15 тыс. руб.</b></td><td>Локально</td><td>Да</td><td>Не требуется</td></tr>
+        <tr><td>Ручной скаутинг</td><td>Быстро</td><td>до 200 руб.</td><td>Вручную</td><td>Нет</td><td>Не требуется</td></tr>
+        <tr><td>iSCOUT</td><td>Средне</td><td>90 тыс. руб.</td><td>В облаке</td><td>Частично</td><td>Требуется</td></tr>
+        <tr><td>Trapview</td><td>Средне</td><td>185 тыс. руб.</td><td>В облаке</td><td>Частично</td><td>Требуется</td></tr>
+        <tr><td>Агродроны</td><td>Долго</td><td>от 200 тыс. руб.</td><td>В облаке</td><td>Нет</td><td>Требуется</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="adv-grid">
+      <article class="adv reveal"><h3>Локальный ИИ</h3><p>В отличие от Trapview и iScout кадр анализируется на устройстве. На базу уходит только класс + количество — нет зависимости от 3G/4G и облаков.</p></article>
+      <article class="adv reveal"><h3>Комплекс 3-в-1</h3><p>Подсчёт вредителей на ленте + микроклимат + анализ почвы в одной точке. Находим «карманы» застоя влаги до вспышки болезней.</p></article>
+      <article class="adv reveal"><h3>Доступность</h3><p>~15 тыс. руб. за узел — в 6–12 раз дешевле импорта. Доступен теплицам, сити-фермам и КФХ.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ТЕХНОЛОГИИ / ЗАДЕЛ -->
+<section class="tech" id="tech">
+  <div class="wrap">
+    <div class="sec-label">Текущая стадия · Что уже сделано</div>
+    <h2 class="sec-title">Задел проекта</h2>
+    <div class="tech-grid">
+      <article class="tech-card reveal">
+        <div class="tech-tag">ИИ · YOLOv8</div>
+        <h3>Собственный датасет: 350+ ловушек, 20 га</h3>
+        <ul class="bars">
+          <li><span>Кузнечики</span><div class="bar"><i style="width:96%"></i></div><b>96% mAP</b></li>
+          <li><span>Шипоносики</span><div class="bar"><i style="width:93%"></i></div><b>93% mAP</b></li>
+          <li><span>Мухи</span><div class="bar"><i style="width:87%"></i></div><b>87% mAP</b></li>
+        </ul>
+        <p>Модель оптимизирована под TinyML: инференс прямо на узле, без облака.</p>
+      </article>
+      <article class="tech-card reveal">
+        <div class="tech-tag">Железо</div>
+        <h3>Полная электрическая часть собрана</h3>
+        <ul class="parts">
+          <li>Плата LicheeRV Nano-W + камера GC4653</li>
+          <li>LoRa EBYTE E32, таймер TPL5110, АКБ 18650</li>
+          <li>Датчики: AHT20+BMP280, влажность почвы, свет KY-018</li>
+          <li>Шаговый мотор 28BYJ-48, драйвер, MT3608, холдер АКБ</li>
+        </ul>
+      </article>
+      <article class="tech-card reveal">
+        <div class="tech-tag">Корпус · КОМПАС-3D</div>
+        <h3>Прототип 3D-модели готов</h3>
+        <p>Мотор, головной блок с электроникой, клейкая лента, камера, ремень. Печать из ASA-пластика + алюминиевый профиль, класс защиты IP65.</p>
+        <p class="muted">Себестоимость передатчика ~11 000 ₽ · пилотный кластер 5 узлов + база на 1 га — 60–65 000 ₽.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- РЫНОК -->
+<section class="market" id="market">
+  <div class="wrap">
+    <div class="sec-label">Рынок РФ · Аудитория · Выгода</div>
+    <h2 class="sec-title">Кому это нужно и сколько это даёт</h2>
+    <div class="aud-grid">
+      <article class="aud reveal"><h3>Тепличные комплексы ЗЛГ</h3><p>Овощи, зелень, ягоды, цветы. Потеря 5–10% томатов на 1 га — убыток 1,5–3 млн ₽.</p></article>
+      <article class="aud reveal"><h3>Вертикальные и сити-фермы</h3><p>Закрытые помещения, высокая плотность посадки — вспышка за дни губит до 30–50% урожая.</p></article>
+      <article class="aud reveal"><h3>Питомники и ягодники</h3><p>Дорогой посадочный материал, где цена ошибки максимальна.</p></article>
+    </div>
+    <div class="roles reveal">
+      <div><b>Главный агроном</b> (30–55 лет, пользователь) — уходит от ручного подсчёта, получает точечные уведомления о вспышках и точный микроклимат.</div>
+      <div><b>Управляющий теплицей</b> (35–60 лет, ЛПР) — считает ROI: нет потерь урожая, меньше химии и энтомофагов.</div>
+    </div>
+    <div class="funnel reveal">
+      <div class="funnel-row"><span>PAM — потенциальный рынок</span><b>620 млрд ₽</b></div>
+      <div class="funnel-row"><span>TAM — общий целевой рынок</span><b>225 млрд ₽</b></div>
+      <div class="funnel-row"><span>SAM — доступный рынок</span><b>69 млрд ₽</b></div>
+      <div class="funnel-row hl"><span>SOM — реально получаемый рынок</span><b>3,45 млрд ₽</b></div>
+    </div>
+    <div class="biz-grid">
+      <article class="biz reveal">
+        <h3>Выгода</h3>
+        <p class="big">до −30% <span>затрат на инсектициды</span></p>
+        <p class="big">+5% <span>сохранённого урожая минимум</span></p>
+        <p>Сеть ловушек окупается за <b>4–6 месяцев</b>. Комплект на 1 га (~2 станции) предотвращает убыток одной вспышки и уже окупается.</p>
+      </article>
+      <article class="biz reveal">
+        <h3>Бизнес-модель</h3>
+        <p><b>Продажа системы (IaaS):</b> плотность 2 станции / 1 га, комплект на 100 га — 3,1 млн ₽, маржинальность оборудования 30% (~932 тыс. ₽ валовой прибыли).</p>
+        <p><b>Подписка со 2-го года (SaaS):</b> 1-й год бесплатно, далее 5 000 ₽/мес (60 000 ₽/год с поля), маржинальность софта 75% (~45 тыс. ₽/год с поля).</p>
+        <p><a class="link" href="https://disk.yandex.ru/i/zPe5ZbGv2nMkdA" target="_blank" rel="noopener">Подробная экономика и юнит-экономика →</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ПЛАНЫ -->
+<section class="road">
+  <div class="wrap">
+    <div class="sec-label">Планы на будущее</div>
+    <h2 class="sec-title">Дорожная карта</h2>
+    <div class="road-grid">
+      <article class="road-card reveal"><h3>Тепличные пилоты</h3><p>Окт – ноя: тестирование модулей на гектар в реальных комбинатах закрытого грунта.</p></article>
+      <article class="road-card reveal"><h3>Дообучение ИИ</h3><p>Дек – янв: сбор новых датасетов, расширение классов (белокрылка, трипсы, тля).</p></article>
+      <article class="road-card reveal"><h3>Поля</h3><p>Фев – мар: масштабный запуск на открытом грунте к весеннему сезону.</p></article>
+      <article class="road-card reveal"><h3>Выставки</h3><p>Апр: презентации, обратная связь, партнёрства с агрохолдингами и вузами.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- КОМАНДА -->
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="sec-label">Команда</div>
+    <h2 class="sec-title">Кто делает СТРАЖНиКа</h2>
+    <div class="team-grid">
+      <article class="mate reveal"><h3>Иван Жданов</h3><span>AI/ML, архитектор решений, лидер</span><p>6 лет — виноградники, с 12 лет — робототехника и fullstack. Призёр ВсОШ, победитель олимпиады «Газпром».</p></article>
+      <article class="mate reveal"><h3>Анастасия Турчина</h3><span>Главный агроном, защита растений</span><p>Методики расчёта ЭПВ, 3+ года полевых исследований.</p></article>
+      <article class="mate reveal"><h3>Василиса Широбокова</h3><span>Embedded (IoT)</span><p>Прошивки сети, режимы сна, многократный призёр IT-хакатонов.</p></article>
+      <article class="mate reveal"><h3>София Устинова</h3><span>Backend, базы данных</span><p>Сбор и хранение данных с полей, 2+ года в IT-инфраструктуре.</p></article>
+      <article class="mate reveal"><h3>Михаил Ракин</h3><span>Инженер-конструктор CAD/CAE</span><p>Корпуса и крепления, 4+ года в 3D-моделировании.</p></article>
+      <article class="mate reveal"><h3>Анна Селютина</h3><span>Продакт, финансовый аналитик</span><p>Unit-экономика и ROI, опыт управления стартапами.</p></article>
+      <article class="mate reveal"><h3>Арина Колозян</h3><span>UI/UX, исследования</span><p>Веб-панели для фермеров, визуальная айдентика продукта.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ / ИНВЕСТ -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts-in">
+    <div class="invest reveal">
+      <div class="sec-label light">Инвестиционный запрос</div>
+      <h2>Нам нужно немного, чтобы запустить серию</h2>
+      <ul>
+        <li><b>50 000 ₽</b> — на запуск серийного образца (пилотный кластер)</li>
+        <li><b>Экспертиза:</b> биозащита растений, калибровка датчиков микроклимата</li>
+        <li><b>Инфо-поддержка:</b> выходы на тепличные комбинаты, публикации в СМИ</li>
+      </ul>
+    </div>
+    <div class="cform reveal">
+      <h2>Контакты</h2>
+      <p class="c-lead">Ответим агрономам, теплицам, вузам и инвесторам. Подробнее о проекте — по запросу вышлем презентацию и экономику.</p>
+      <a class="c-row" href="mailto:i.zhdanov04@yandex.ru"><span class="c-ico">@</span><span><b>i.zhdanov04@yandex.ru</b><em>почта проекта</em></span></a>
+      <a class="c-row" href="tel:+79005925035"><span class="c-ico">☎</span><span><b>+7 900 592-50-35</b><em>Иван Жданов, лидер проекта</em></span></a>
+      <a class="c-row" href="https://t.me/i_zhdanov04" target="_blank" rel="noopener"><span class="c-ico">✈</span><span><b>@i_zhdanov04</b><em>Telegram</em></span></a>
+      <a class="btn btn-primary btn-block" href="mailto:i.zhdanov04@yandex.ru?subject=СТРАЖНиК — хочу пилот / сотрудничество">Написать письмо</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div><b>С.Т.Р.А.Ж.Н.иК.</b> — система телеметрии, распознавания, анализа жизнедеятельности насекомых и климата.</div>
+    <div class="muted">Творческий проект по технологии · 2026–2027 · Презентация и пояснительная записка — у команды.</div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Наверх">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
